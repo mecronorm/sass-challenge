@@ -1,3 +1,4 @@
+$normalpadding: 16px;
 @mixin boxshadow {
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
@@ -34,7 +35,7 @@ article {
     flex-basis: 45%;
     border: 1px silver solid;
     @include boxshadow;
-    padding: 16px;
+    padding: $normalpadding;
     margin: 16px;
     clear: both;
     overflow: auto;
@@ -54,7 +55,7 @@ article {
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
-    padding: 16px;
+    padding: $normalpadding;
     display: block;
     white-space: pre-wrap;
     .before {
@@ -82,7 +83,7 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: 32px;
+  padding: $normalpadding*2;
   margin-bottom: 0px;
 }
 
@@ -91,7 +92,7 @@ h6 {
 .error,
 .warning {
   border: 1px solid #ccc;
-  padding: 16px;
+  padding: $normalpadding;
   margin: 16px;
   color: #2748b3;
   background-color: #000;
