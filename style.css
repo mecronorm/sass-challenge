@@ -14,7 +14,6 @@ article {
   display: flex;
   flex-wrap: wrap;
 }
-
 article section {
   flex-grow: 1;
   flex-basis: 45%;
@@ -26,12 +25,10 @@ article section {
   overflow: auto;
   box-sizing: border-box;
 }
-
-article section#selling-points {
+article section #selling-points {
   flex-grow: 2;
   flex-basis: 100%;
 }
-
 article pre {
   background: #000;
   border: 1px solid #ddd;
@@ -46,13 +43,11 @@ article pre {
   display: block;
   white-space: pre-wrap;
 }
-
-article pre.before {
+article pre .before {
   float: left;
   width: 40%;
 }
-
-article pre.after {
+article pre .after {
   float: right;
   width: 40%;
 }
