@@ -1,5 +1,7 @@
 $normalpadding: 16px;
-$backgroundcolor: #000;
+$backgroundcolor: #000 !default;
+$textcolor: #2748b3 !default;
+$titlecolor: #6b8eff !default;
 @mixin boxshadow {
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
@@ -7,7 +9,7 @@ $backgroundcolor: #000;
 }
 body {
   font: 100% "Space Mono", monospace;
-  color: #2748b3;
+  color: $textcolor;
   margin: 0px;
   padding: 0px;
   background-color: $backgroundcolor;
@@ -47,7 +49,7 @@ article {
     }
   }
   pre {
-    background: $backgroundcolor;
+    background: #000;
     border: 1px solid #ddd;
     color: #666;
     font-family: monospace;
@@ -59,14 +61,14 @@ article {
     padding: $normalpadding;
     display: block;
     white-space: pre-wrap;
-    .before {
+  }
+  .before {
       float: left;
       width: 40%;
-    }
-    .after {
+  }
+  .after {
       float: right;
       width: 40%;
-    }
   }
 }
 
@@ -76,12 +78,12 @@ nav {
   a {
     text-decoration: none;
     @extend section;
-    .blue{
+  }
+  .blue{
       color: blue;
-    }
-    .red{
+  }
+  .red{
       color: red;
-    }
   }
 }
 
@@ -89,7 +91,7 @@ nav {
 h1,
 h2,
 h6 {
-  color: #6b8eff;
+  color: $titlecolor;
 }
 
 h1 {
